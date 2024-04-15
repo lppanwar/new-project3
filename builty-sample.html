@@ -1,192 +1,733 @@
-<!DOCTYPE html><html><head>
-    <style>.main-div { display: flex; flex-direction: column; padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px; min-height: 800px; }.main-div .b-header { padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px; display: flex; border-top-color: rgb(7, 7, 61); border-top-style: solid; border-top-width: 3px; border-right-color: rgb(7, 7, 61); border-right-style: solid; border-right-width: 3px; border-bottom-color: rgb(7, 7, 61); border-bottom-style: solid; border-bottom-width: 3px; border-left-color: rgb(7, 7, 61); border-left-style: solid; border-left-width: 3px; }.main-div .b-header .b-pan { flex-basis: 19%; }.main-div .b-header .b-title { flex-basis: 68%; display: flex; flex-direction: column; }.main-div .b-header .b-title .main-title { flex-direction: column; }.main-div .b-header .b-title .main-title .title { color: rgb(0, 0, 0); font-size: 40px; font-weight: bold; }.main-div .b-header .b-title .main-title .title-2 { color: rgb(28, 33, 90); font-size: 20px; font-weight: bold; }.title { color: red; }.main-div .b-header .b-title .address-1 { color: rgb(0, 0, 0); font-size: 15px; font-weight: bold; }.main-div .b-header .b-pic { flex-basis: 10%; }.main-div .b-header .b-pic img { width: 110px; height: 140px; }.main-div .b-container { display: flex; flex-direction: row; border-top-color: rgb(7, 7, 61); border-top-style: solid; border-top-width: 3px; border-right-color: rgb(7, 7, 61); border-right-style: solid; border-right-width: 3px; border-bottom-color: rgb(7, 7, 61); border-bottom-style: solid; border-bottom-width: 3px; border-left-color: rgb(7, 7, 61); border-left-style: solid; border-left-width: 3px; min-height: 700px; }.main-div .b-footer { display: flex; border-top-color: rgb(7, 7, 61); border-top-style: solid; border-top-width: 3px; border-right-color: rgb(7, 7, 61); border-right-style: solid; border-right-width: 3px; border-bottom-color: rgb(7, 7, 61); border-bottom-style: solid; border-bottom-width: 3px; border-left-color: rgb(7, 7, 61); border-left-style: solid; border-left-width: 3px; }.b-daily { border-top-color: rgb(7, 7, 61); border-top-style: solid; border-top-width: 3px; border-right-color: rgb(7, 7, 61); border-right-style: solid; border-right-width: 3px; border-bottom-color: rgb(7, 7, 61); border-bottom-style: solid; border-bottom-width: 3px; border-left-color: rgb(7, 7, 61); border-left-style: solid; border-left-width: 3px; flex-basis: 20%; min-height: 700px; }.b-daily ul { list-style-type: none; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }.b-daily .dialiy-title { color: white; background-color: rgb(7, 7, 61); background-image: initial; text-align: center; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; }.b-daily ul > li { padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; border-top-color: rgb(7, 7, 61); border-top-style: solid; border-top-width: 1px; border-right-color: rgb(7, 7, 61); border-right-style: solid; border-right-width: 1px; border-bottom-color: rgb(7, 7, 61); border-bottom-style: solid; border-bottom-width: 1px; border-left-color: rgb(7, 7, 61); border-left-style: solid; border-left-width: 1px; text-align: center; }.b-buily-details { flex-basis: 80%; }.d-dtails { color: rgb(7, 7, 61); padding-top: 1%; padding-right: 1%; padding-bottom: 50px; padding-left: 1%; width: 98%; display: flex; flex-direction: column; }.d-dtails .d-t-1 { display: flex; flex-direction: row; }.d-dtails .where { flex-basis: 20%; }.d-dtails .where-value { font-weight: 800; flex-basis: 35%; border-bottom-color: rgb(7, 7, 61); border-bottom-style: solid; border-bottom-width: 1px; }.d-dtails .sender { flex-basis: 20%; }.d-dtails .sender-value { font-weight: 800; flex-basis: 40%; border-bottom-color: rgb(7, 7, 61); border-bottom-style: solid; border-bottom-width: 1px; }.d-dtails .reciever { flex-basis: 20%; }.d-dtails .reciever-value { font-weight: 800; flex-basis: 40%; border-bottom-color: rgb(7, 7, 61); border-bottom-style: solid; border-bottom-width: 1px; }.item { border-top-color: rgb(7, 7, 61); border-top-style: solid; border-top-width: 1px; border-right-color: rgb(7, 7, 61); border-right-style: solid; border-right-width: 1px; border-bottom-color: rgb(7, 7, 61); border-bottom-style: solid; border-bottom-width: 1px; border-left-color: rgb(7, 7, 61); border-left-style: solid; border-left-width: 1px; display: flex; min-height: 500px; }.item table { border-collapse: collapse; width: 100%; }tbody { display: block; }tbody tr { display: flex; flex-direction: row; }.item th { border-top-color: rgb(7, 7, 61); border-top-style: solid; border-top-width: 1px; border-right-color: rgb(7, 7, 61); border-right-style: solid; border-right-width: 1px; border-bottom-color: rgb(7, 7, 61); border-bottom-style: solid; border-bottom-width: 1px; border-left-color: rgb(7, 7, 61); border-left-style: solid; border-left-width: 1px; }.item td { border-top-color: rgb(7, 7, 61); border-top-style: solid; border-top-width: 1px; border-right-color: rgb(7, 7, 61); border-right-style: solid; border-right-width: 1px; border-bottom-color: rgb(7, 7, 61); border-bottom-style: solid; border-bottom-width: 1px; border-left-color: rgb(7, 7, 61); border-left-style: solid; border-left-width: 1px; }.t-header { border-top-color: rgb(7, 7, 61); border-top-style: solid; border-top-width: 1px; border-right-color: rgb(7, 7, 61); border-right-style: solid; border-right-width: 1px; border-bottom-color: rgb(7, 7, 61); border-bottom-style: solid; border-bottom-width: 1px; border-left-color: rgb(7, 7, 61); border-left-style: solid; border-left-width: 1px; height: 20px; }.service { display: flex; flex-grow: 1; min-height: 150px; align-self: flex-end; }.service--details { flex-basis: 50%; border-top-color: rgb(7, 7, 61); border-top-style: solid; border-top-width: 1px; border-right-color: rgb(7, 7, 61); border-right-style: solid; border-right-width: 1px; border-bottom-color: rgb(7, 7, 61); border-bottom-style: solid; border-bottom-width: 1px; border-left-color: rgb(7, 7, 61); border-left-style: solid; border-left-width: 1px; color: red; }.service--details .bank { border-top-color: rgb(7, 7, 61); border-top-style: solid; border-top-width: 1px; border-right-color: rgb(7, 7, 61); border-right-style: solid; border-right-width: 1px; border-bottom-color: rgb(7, 7, 61); border-bottom-style: solid; border-bottom-width: 1px; border-left-color: rgb(7, 7, 61); border-left-style: solid; border-left-width: 1px; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; }.service--details .bank .bank-item { display: flex; justify-content: center; }.service--details .bank .bank-item .b-name { padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 2px; }.service--details .bank .bank-item .b-name-value { font-weight: bold; padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 2px; }.tax { flex-basis: 30%; border-top-color: rgb(7, 7, 61); border-top-style: solid; border-top-width: 1px; border-right-color: rgb(7, 7, 61); border-right-style: solid; border-right-width: 1px; border-bottom-color: rgb(7, 7, 61); border-bottom-style: solid; border-bottom-width: 1px; border-left-color: rgb(7, 7, 61); border-left-style: solid; border-left-width: 1px; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; display: flex; flex-direction: column; }.tax .tax-title { text-align: center; padding-top: 0px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; font-weight: bold; }.tax .tax-r { display: flex; flex-direction: row; justify-content: center; }.tax .tax-r .t-t-t-value { border-top-left-radius: 25px; border-top-right-radius: 25px; border-bottom-right-radius: 25px; border-bottom-left-radius: 25px; margin-left: 10px; min-height: 20px; min-width: 60%; border-top-color: rgb(7, 7, 61); border-top-style: solid; border-top-width: 2px; border-right-color: rgb(7, 7, 61); border-right-style: solid; border-right-width: 2px; border-bottom-color: rgb(7, 7, 61); border-bottom-style: solid; border-bottom-width: 2px; border-left-color: rgb(7, 7, 61); border-left-style: solid; border-left-width: 2px; }.remaining { flex-basis: 40%; border-top-color: rgb(7, 7, 61); border-top-style: solid; border-top-width: 1px; border-right-color: rgb(7, 7, 61); border-right-style: solid; border-right-width: 1px; border-bottom-color: rgb(7, 7, 61); border-bottom-style: solid; border-bottom-width: 1px; border-left-color: rgb(7, 7, 61); border-left-style: solid; border-left-width: 1px; display: flex; flex-direction: column; min-height: 150px; }.remaining .r-rwo { border-top-color: rgb(7, 7, 61); border-top-style: solid; border-top-width: 1px; border-right-color: rgb(7, 7, 61); border-right-style: solid; border-right-width: 1px; border-bottom-color: rgb(7, 7, 61); border-bottom-style: solid; border-bottom-width: 1px; border-left-color: rgb(7, 7, 61); border-left-style: solid; border-left-width: 1px; color: red; display: flex; flex-direction: row; min-height: 33px; }.remaining .r-rwo .r-title { flex-basis: 30%; min-width: 40%; text-align: center; line-height: 20px; padding-top: 5px; }.remaining .r-rwo .r-title-value { border-left-color: rgb(7, 7, 61); border-left-style: solid; border-left-width: 1px; flex-basis: 70%; line-height: 20px; }.gst { padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; color: rgb(7, 7, 61); font-weight: bold; }.b-footer .f-one { flex-basis: 50%; }.b-footer .f-two { flex-basis: 30%; display: flex; flex-direction: column; }.b-footer .f-two .d-place { align-self: flex-end; min-height: 100px; min-width: 100px; }.b-footer .f-three { flex-basis: 20%; display: flex; align-self: flex-end; }</style>
-</head>
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .main-div {
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        min-height: 800px;
+      }
+      .main-div .b-header {
+        background-color: lightyellow;
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        display: flex;
+        border-top-color: rgb(7, 7, 61);
+        border-top-style: solid;
+        border-top-width: 3px;
+        border-right-color: rgb(7, 7, 61);
+        border-right-style: solid;
+        border-right-width: 3px;
+        border-bottom-color: rgb(7, 7, 61);
+        border-bottom-style: solid;
+        border-bottom-width: 3px;
+        border-left-color: rgb(7, 7, 61);
+        border-left-style: solid;
+        border-left-width: 3px;
+      }
+      .main-div .b-header .b-pan {
+        flex-basis: 19%;
+        color: rgb(28, 33, 90);
+      }
+      .main-div .b-header .b-title {
+        flex-basis: 48%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+      }
+      .main-div .b-header .b-title .main-title {
+        flex-direction: column;
+      }
+      .main-div .b-header .b-title .main-title .title {
+        color: red;
+        font-size: 40px;
+        font-weight: bold;
+        margin-top: 40px;
+        position: relative;
+        bottom: 15px;
+      }
+      .main-div .b-header .b-title .main-title .title-2 {
+        color: rgb(28, 33, 90);
+        font-size: 20px;
+        font-weight: bold;
+        position: relative;
+        bottom: 5px;
+      }
+      .title {
+        color: red;
+      }
+      .main-div .b-header .b-title .address-1 {
+        color: red;
+        font-size: 15px;
+        font-weight: bold;
+        position: relative;
+        display: flex;
+        bottom: 12px;
+      }
+      .main-div .b-header .b-pic {
+        flex-basis: 10%;
+      }
+      .main-div .b-header .b-pic img {
+        width: 110px;
+        height: 148px;
+        margin-left: 70px;
+        margin-bottom: 0px;
+        margin-top: -8px;
+      }
+      .main-div .b-container {
+        background-color: lightyellow;
+        display: flex;
+        flex-direction: row;
+        border-top-color: rgb(7, 7, 61);
+        border-top-style: solid;
+        border-top-width: 3px;
+        border-right-color: rgb(7, 7, 61);
+        border-right-style: solid;
+        border-right-width: 3px;
+        border-bottom-color: rgb(7, 7, 61);
+        border-bottom-style: solid;
+        border-bottom-width: 3px;
+        border-left-color: rgb(7, 7, 61);
+        border-left-style: solid;
+        border-left-width: 3px;
+        min-height: 700px;
+      }
+      .main-div .b-footer {
+        background-color: lightyellow;
+        display: flex;
+        border-top-color: rgb(7, 7, 61);
+        border-top-style: solid;
+        border-top-width: 3px;
+        border-right-color: rgb(7, 7, 61);
+        border-right-style: solid;
+        border-right-width: 3px;
+        border-bottom-color: rgb(7, 7, 61);
+        border-bottom-style: solid;
+        border-bottom-width: 3px;
+        border-left-color: rgb(7, 7, 61);
+        border-left-style: solid;
+        border-left-width: 3px;
+      }
+      .b-daily {
+        border-top-color: rgb(7, 7, 61);
+        border-top-style: solid;
+        border-top-width: 3px;
+        border-right-color: rgb(7, 7, 61);
+        border-right-style: solid;
+        border-right-width: 3px;
+        border-bottom-color: rgb(7, 7, 61);
+        border-bottom-style: solid;
+        border-bottom-width: 3px;
+        border-left-color: rgb(7, 7, 61);
+        border-left-style: solid;
+        border-left-width: 3px;
+        flex-basis: 20%;
+        min-height: 700px;
+      }
+      .b-daily ul {
+        list-style-type: none;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+      }
+      .b-daily .dialiy-title {
+        color: white;
+        background-color: rgb(7, 7, 61);
+        background-image: initial;
+        text-align: center;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+      }
+      .b-daily ul > li {
+        color: rgb(7, 7, 61);
+        padding-top: 5px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        border-top-color: rgb(7, 7, 61);
+        border-top-style: solid;
+        border-top-width: 1px;
+        border-right-color: rgb(7, 7, 61);
+        border-right-style: solid;
+        border-right-width: 1px;
+        border-bottom-color: rgb(7, 7, 61);
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-left-color: rgb(7, 7, 61);
+        border-left-style: solid;
+        border-left-width: 1px;
+        text-align: center;
+        font-size: 14px;
+      }
+      .b-buily-details {
+        flex-basis: 80%;
+      }
+      .d-dtails {
+        color: rgb(7, 7, 61);
+        padding-top: 1%;
+        padding-right: 1%;
+        padding-bottom: 50px;
+        padding-left: 1%;
+        width: 98%;
+        display: flex;
+        flex-direction: column;
+      }
+      .d-dtails .d-t-1 {
+        display: flex;
+        flex-direction: row;
+      }
+      .d-dtails .where {
+        flex-basis: 20%;
+      }
+      .d-dtails .where-value {
+        font-weight: 800;
+        flex-basis: 35%;
+        border-bottom-color: rgb(7, 7, 61);
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+      }
+      .d-dtails .sender {
+        flex-basis: 20%;
+      }
+      .d-dtails .sender-value {
+        font-weight: 800;
+        flex-basis: 40%;
+        border-bottom-color: rgb(7, 7, 61);
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+      }
+      .d-dtails .reciever {
+        flex-basis: 20%;
+      }
+      .d-dtails .reciever-value {
+        font-weight: 800;
+        flex-basis: 40%;
+        border-bottom-color: rgb(7, 7, 61);
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+      }
+      .item {
+        border-top-color: rgb(7, 7, 61);
+        border-top-style: solid;
+        border-top-width: 1px;
+        border-right-color: rgb(7, 7, 61);
+        border-right-style: solid;
+        border-right-width: 1px;
+        border-bottom-color: rgb(7, 7, 61);
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-left-color: rgb(7, 7, 61);
+        border-left-style: solid;
+        border-left-width: 1px;
+        display: flex;
+        min-height: 500px;
+      }
+      .item table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      tbody {
+        display: block;
+      }
+      tbody tr {
+        display: flex;
+        flex-direction: row;
+        color: rgb(7, 7, 61);
+      }
+      .item th {
+        border-top-color: rgb(7, 7, 61);
+        border-top-style: solid;
+        border-top-width: 1px;
+        border-right-color: rgb(7, 7, 61);
+        border-right-style: solid;
+        border-right-width: 1px;
+        border-bottom-color: rgb(7, 7, 61);
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-left-color: rgb(7, 7, 61);
+        border-left-style: solid;
+        border-left-width: 1px;
+        color: rgb(7, 7, 61);
+      }
+      .item td {
+        border-top-color: rgb(7, 7, 61);
+        border-top-style: solid;
+        border-top-width: 1px;
+        border-right-color: rgb(7, 7, 61);
+        border-right-style: solid;
+        border-right-width: 1px;
+        border-bottom-color: rgb(7, 7, 61);
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-left-color: rgb(7, 7, 61);
+        border-left-style: solid;
+        border-left-width: 1px;
+      }
+      .t-header {
+        border-top-color: rgb(7, 7, 61);
+        border-top-style: solid;
+        border-top-width: 1px;
+        border-right-color: rgb(7, 7, 61);
+        border-right-style: solid;
+        border-right-width: 1px;
+        border-bottom-color: rgb(7, 7, 61);
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-left-color: rgb(7, 7, 61);
+        border-left-style: solid;
+        border-left-width: 1px;
+        height: 20px;
+      }
+      .service {
+        display: flex;
+        flex-grow: 1;
+        min-height: 150px;
+        align-self: flex-end;
+      }
+      .service--details {
+        flex-basis: 60%;
+        border-top-color: rgb(7, 7, 61);
+        border-top-style: solid;
+        border-top-width: 1px;
+        border-right-color: rgb(7, 7, 61);
+        border-right-style: solid;
+        border-right-width: 1px;
+        border-bottom-color: rgb(7, 7, 61);
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-left-color: rgb(7, 7, 61);
+        border-left-style: solid;
+        border-left-width: 1px;
+        color: red;
+      }
+      .service--details .bank {
+        border-top-color: rgb(7, 7, 61);
+        border-top-style: solid;
+        border-top-width: 1px;
+        border-right-color: rgb(7, 7, 61);
+        border-right-style: solid;
+        border-right-width: 1px;
+        border-bottom-color: rgb(7, 7, 61);
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-left-color: rgb(7, 7, 61);
+        border-left-style: solid;
+        border-left-width: 1px;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+      }
+      .service--details .bank .bank-item {
+        display: flex;
+        justify-content: center;
+      }
+      .service--details .bank .bank-item .b-name {
+        padding-top: 2px;
+        padding-right: 2px;
+        padding-bottom: 2px;
+        padding-left: 2px;
+      }
+      .service--details .bank .bank-item .b-name-value {
+        font-weight: bold;
+        padding-top: 2px;
+        padding-right: 2px;
+        padding-bottom: 2px;
+        padding-left: 2px;
+      }
+      .tax {
+        color: rgb(7, 7, 61);
+        flex-basis: 30%;
+        border-top-color: rgb(7, 7, 61);
+        border-top-style: solid;
+        border-top-width: 1px;
+        border-right-color: rgb(7, 7, 61);
+        border-right-style: solid;
+        border-right-width: 1px;
+        border-bottom-color: rgb(7, 7, 61);
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-left-color: rgb(7, 7, 61);
+        border-left-style: solid;
+        border-left-width: 1px;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        display: flex;
+        flex-direction: column;
+      }
+      .tax .tax-title {
+        text-align: center;
+        padding-top: 0px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        font-weight: bold;
+      }
+      .tax .tax-r {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
 
-<body>
+      .tax-r{
+        margin-top: 8px;
+      }
+      .tax .tax-r .t-t-t-value {
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+        margin-left: 10px;
+        min-height: 22px;
+        min-width: 56%;
+        border-top-color: rgb(7, 7, 61);
+        border-top-style: solid;
+        border-top-width: 2px;
+        border-right-color: rgb(7, 7, 61);
+        border-right-style: solid;
+        border-right-width: 2px;
+        border-bottom-color: rgb(7, 7, 61);
+        border-bottom-style: solid;
+        border-bottom-width: 2px;
+        border-left-color: rgb(7, 7, 61);
+        border-left-style: solid;
+        border-left-width: 2px;
+      }
+      .remaining {
+        flex-basis: 40%;
+        border-top-color: rgb(7, 7, 61);
+        border-top-style: solid;
+        border-top-width: 1px;
+        border-right-color: rgb(7, 7, 61);
+        border-right-style: solid;
+        border-right-width: 1px;
+        border-bottom-color: rgb(7, 7, 61);
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-left-color: rgb(7, 7, 61);
+        border-left-style: solid;
+        border-left-width: 1px;
+        display: flex;
+        flex-direction: column;
+        min-height: 150px;
+      }
+      .remaining .r-rwo {
+        border-top-color: rgb(7, 7, 61);
+        border-top-style: solid;
+        border-top-width: 1px;
+        border-right-color: rgb(7, 7, 61);
+        border-right-style: solid;
+        border-right-width: 1px;
+        border-bottom-color: rgb(7, 7, 61);
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-left-color: rgb(7, 7, 61);
+        border-left-style: solid;
+        border-left-width: 1px;
+        color: red;
+        display: flex;
+        flex-direction: row;
+        min-height: 33px;
+      }
+      .remaining .r-rwo .r-title {
+        flex-basis: 30%;
+        min-width: 40%;
+        text-align: center;
+        line-height: 20px;
+        padding-top: 5px;
+      }
+      .remaining .r-rwo .r-title-value {
+        border-left-color: rgb(7, 7, 61);
+        border-left-style: solid;
+        border-left-width: 1px;
+        flex-basis: 70%;
+        line-height: 20px;
+      }
+      .gst {
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        color: rgb(7, 7, 61);
+        font-weight: bold;
+      }
+      .b-footer .f-one {
+        flex-basis: 50%;
+        color: rgb(7, 7, 61);
+      }
+      .b-footer .f-two {
+        flex-basis: 25%;
+        display: flex;
+        flex-direction: column;
+        color: rgb(7, 7, 61);
+        font-size: 16px;
+        position: relative;
+        left: 5px;
+        top: 2px;
+      }
+      .b-footer .f-two .d-place {
+        display: flex;
+        align-self: flex-end;
+        position: relative;
+        top: 30px;
+        right: 230px;
+        font-size: 16px;
+        color: rgb(7, 7, 61);
+      }
+      .b-footer .f-three {
+        color: red;
+        flex-basis: 25%;
+        display: flex;
+        align-self: flex-end;
+        position: relative;
+        left: 50px;
+      }
+      .b-pic1 {
+        display: flex;
+        height: 118px;
+        position: relative;
+        margin-right: 8px;
+        margin-left: 0px;
+        padding: 4px;
+      }
+      .first-title {
+        display: flex;
+        text-align: center;
+        flex-basis: 15%;
+        position: relative;
+        left: 250px;
+        bottom: 15px;
+      }
+    </style>
+  </head>
+
+  <body>
     <div class="main-div" id="print-div">
-        <div class="b-header">
-            <div class="b-pan">
-                <div>
-                    Pan No: AEZPY1152L
-                </div>
-                <div> Mob: 9753323073</div>
-                <div> Builty Number: 5688</div>
-            </div>
-            <div class="b-title">
-                <div class="main-title">
-                    <div class="title">जय माँ भवानी ट्रांसपोर्ट</div>
-                    <div class="title-2"> ट्रांसपोर्ट कांट्रेक्टर और कमीशन एजेंट </div>
-                </div>
-                <div class="address-1">Evaluation Only. Created with Aspose.HTML. Copyright 2013-2024 Aspose Pty Ltd.(पीथमपुर) जिला धार -
-                    454774
-                </div>
-            </div>
-            <div class="b-pic">
-                <img src="assets/images/maa.png" alt="">
-            </div>
+      <div class="b-header">
+        <div class="b-pan">
+          <div><h4>Pan No: AEZPY1152L</h4></div>
+          <div><h4>Mob: 9753323073</h4></div>
+          <div><h4>Builty Number: 5688</h4></div>
         </div>
-        <div class="b-container" *ngif="builty">
-            <div class="b-daily">
-                <div class="dialiy-title"> डेली सर्विस फुल ट्रक लोड</div>
-                <ul>
-                    <li>इन्दौर से</li>
-                    <li>अहमदाबाद</li>
-                    <li>भरूच</li>
-                    <li>अंकलेश्वर</li>
-                    <li>सूरत</li>
-                    <li>वापी</li>
-                    <li>राजकोट</li>
-                    <li>जामनगर</li>
-                    <li>काडला</li>
-                    <li>भावनगर</li>
-                    <li>सम्पूर्ण गुजरात</li>
-                    <li>
-                        सभी प्रसंगो का
-                        न्यायक्षेत्र धार रहेगा ।
-                    </li>
-                </ul>
-            </div>
-            <div class="b-buily-details">
-                <div class="d-dtails">
-                    <div class="d-t-1">
-                        <div class="where">कहाँ से </div>
-                        <div class="where-value"> {{FromWhere}} </div>
-                        <div class="where"> कहाँ तक </div>
-                        <div class="where-value"> {{TillWhere}}</div>
-                        <div class="where"> दिनांक</div>
-                        <div class="where-value">{{Date}}</div>
-                    </div>
-                    <div class="d-t-1">
-                        <div class="sender">माल भेजने वाला श्री </div>
-                        <div class="sender-value"> {{SenderName}} </div>
-                        <div class="sender"> मोबाईल नं.</div>
-                        <div class="sender-value">{{Mobile}}</div>
-                    </div>
-                    <div class="d-t-1">
-                        <div class="reciever">माल पाने वाला श्री</div>
-                        <div class="reciever-value">{{RecieverName}}</div>
-                        <div class="reciever"> गाड़ी नं.</div>
-                        <div class="reciever-value">{{VehicalNumber}}</div>
-                    </div>
-                </div>
-                <div class="item">
-                    <table class="results">
-                        <tbody><tr><th height="15px" width="15%">
-                            दागीने की
-                            संख्या
-                        </th>
-                        <th height="15px" width="40%">माल का विवरण</th>
-                        <th height="15px" width="15%">वजन(क्विंटल.किलो)</th>
-                        <th height="15px" width="15%">दर</th>
-                        <th height="15px" width="15%">किराया</th>
-                        <th height="15px" width="15%">रकम</th>
-                        </tr></tbody><tbody id="itemtable">
-                            <tr id="itemrow">
-                                <td height="15px" width="15%">{{quntityOfItem}} </td>
-                                <td height="15px" width="40%">{{detailOfItem}}</td>
-                                <td height="15px" width="15%">{{weigth}}</td>
-                                <td height="15px" width="15%">{{rate}}</td>
-                                <td height="15px" width="15%">{{fare}}</td>
-                                <td height="15px" width="15%">{{price}}</td>
-                            </tr>
-                      </tbody>
-                    </table>
-                </div>
-                <div class="service">
-                    <div class="service--details">
-                        <div class="bank">
-                            <div class="bank-item">
-                                <div class="b-name"> Bank Details:</div>
-                                <div class="b-name-value">HDFC Bank</div>
-                            </div>
-                            <div class="bank-item">
-                                <div class="b-name"> Name:</div>
-                                <div class="b-name-value">Jai Maa Bhavani Transport</div>
-                            </div>
-                            <div class="bank-item">
-                                <div class="b-name"> Branch:</div>
-                                <div class="b-name-value">Baggad</div>
-                            </div>
-                            <div class="bank-item">
-                                <div class="b-name"> A/C No:</div>
-                                <div class="b-name-value">123565464564</div>
-                            </div>
-                            <div class="bank-item">
-                                <div class="b-name"> IFSC Code</div>
-                                <div class="b-name-value">HDFC00003851</div>
-                            </div>
-                        </div>
-                        <div class="gst">
-                            <div class="g-title">GSTIN:</div>
-                            <div class="g-title-value"></div>
-                        </div>
-                    </div>
-                    <div class="tax">
-                        <div class="tax-title">Service Tax To be Paid by</div>
-                        <div class="tax-r">
-                            <div class="t-t-t">Consignor</div>
-                            <div class="t-t-t-value"></div>
-                        </div>
-                        <div class="tax-r">
-                            <div class="t-t-t">Consignee</div>
-                            <div class="t-t-t-value"></div>
-                        </div>
-                        <div class="tax-r">
-                            <div class="t-t-t">Transporter</div>
-                            <div class="t-t-t-value"></div>
-                        </div>
-                        <div class="tax-r">
-                            <div class="t-t-t">Driver Copy</div>
-                            <div class="t-t-t-value"></div>
-                        </div>
-                    </div>
-                    <div class="remaining">
-                        <div class="r-rwo">
-                            <div class="r-title">सेवाकर</div>
-                            <div class="r-title-value">{{ServiceTax}}</div>
-                        </div>
-                        <div class="r-rwo">
-                            <div class="r-title">बिल्टी चार्ज</div>
-                            <div class="r-title-value">{{BuiltyCharge}}</div>
-                        </div>
-                        <div class="r-rwo">
-                            <div class="r-title">कुल भाड़ा</div>
-                            <div class="r-title-value">{{TotalFare}}</div>
-                        </div>
-                        <div class="r-rwo">
-                            <div class="r-title">एडवांस</div>
-                            <div class="r-title-value">{{Advance}}</div>
-                        </div>
-                        <div class="r-rwo">
-                            <div class="r-title">बाकी किराया</div>
-                            <div class="r-title-value">{{remainingFare}}</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="first-title">//श्री गणेशाय नमः//</div>
+        <div class="b-title">
+          <div class="main-title">
+            <div class="title">जय माँ भवानी ट्रांसपोर्ट</div>
+            <div class="title-2">ट्रांसपोर्ट कांट्रेक्टर और कमीशन एजेंट</div>
+          </div>
+          <div class="address-1">
+            <h4>
+              पता:मेथवाड़ा टोल के पास,सेक्टर no.3 इंडोरामा(पीथमपुर) जिला धार -
+              454774
+            </h4>
+          </div>
         </div>
-        <div class="b-footer">
-            <div class="f-one">
-                नोट : 1. माल डिलेवरी के बाद 15 दिन में पोच जमा करना अनिवार्य है। 2. माल की जवाबदारी मोटर मालिक, ड्रायवर
+        <div class="b-pic1">
+          <img
+            src="https://qph.cf2.quoracdn.net/main-qimg-87b99419c9e2c4a26429d7dbf721df32-lq"
+            alt=""
+          />
+        </div>
 
-                की रहेगी। 3. माल की गिनती की जवाबदारी ड्रायवर की रहेगी। 4. गाड़ी कंपनी में पहुँचने के बाद 24 घंटे के
-                अंदर खाली
-                नहीं होती है तो 1000 रू. प्रतिदिन के हिसाब से चार्ज देना होगा। 5. गाड़ी माल भरने जाती है तो भी 24 घंटे
-                के अंदर नहीं डिलेवरी स्थान
-                भरे जाने पर 100 रू. प्रतिदिन के हिसाब से चार्ज देना होगा।
-            </div>
-            <div class="f-two">
-                <div>Owner's Risk</div>
-                <div class="d-place">
-                    <div class="d-p-t">डिलेवरी स्थान</div>
-                    <div class="dpt-value"></div>
-                </div>
-            </div>
-            <div class="f-three">
-                वास्ते : जय माँ भवानी ट्रांसपोर्ट
-            </div>
+        <div class="b-pic">
+          <img
+            src="https://rukminim1.flixcart.com/image/300/300/xif0q/poster/h/i/f/small-sherawali-maa-durga-mata-poster-hd-god-poster-for-home-original-imaghnzy7jr6p6c3.jpeg"
+            alt=""
+          />
         </div>
+      </div>
+      <div class="b-container" *ngif="builty">
+        <div class="b-daily">
+          <div class="dialiy-title">डेली सर्विस फुल ट्रक लोड</div>
+          <ul>
+            <li>इंदौर से</li>
+            <br />
+            <li>अहमदाबाद</li>
+            <br />
+            <li>भरूच</li>
+            <br />
+            <li>अंकलेश्वर</li>
+            <br />
+            <li>सूरत</li>
+            <br />
+            <li>वापी</li>
+            <br />
+            <li>राजकोट</li>
+            <br />
+            <li>जामनगर</li>
+            <br />
+            <li>काडला</li>
+            <br />
+            <li>भावनगर</li>
+            <br />
+            <li>सम्पूर्ण गुजरात</li>
+            <br />
+            <li>सभी प्रसंगो का न्यायक्षेत्र धार रहेगा ।</li>
+          </ul>
+        </div>
+        <div class="b-buily-details">
+          <div class="d-dtails">
+            <div class="d-t-1">
+              <div class="where">कहाँ से</div>
+              <div class="where-value">{{FromWhere}}</div>
+              <div class="where">कहाँ तक</div>
+              <div class="where-value">{{TillWhere}}</div>
+              <div class="where">दिनांक</div>
+              <div class="where-value">{{Date}}</div>
+            </div>
+            <div class="d-t-1">
+              <div class="sender">माल भेजने वाला श्री</div>
+              <div class="sender-value">{{SenderName}}</div>
+              <div class="sender">मोबाईल नं.</div>
+              <div class="sender-value">{{Mobile}}</div>
+            </div>
+            <div class="d-t-1">
+              <div class="reciever">माल पाने वाला श्री</div>
+              <div class="reciever-value">{{RecieverName}}</div>
+              <div class="reciever">गाड़ी नं.</div>
+              <div class="reciever-value">{{VehicalNumber}}</div>
+            </div>
+          </div>
+          <div class="item">
+            <table class="results">
+              <tbody>
+                <tr>
+                  <th height="18pxpx" width="15%">दागीने की संख्या</th>
+                  <th height="18px" width="30%">माल का विवरण</th>
+                  <th height="18px" width="15%">वजन(क्विंटल.किलो)</th>
+                  <th height="18px" width="10%">दर</th>
+                  <th height="18px" width="15%">किराया</th>
+                  <th height="18px" width="15%">रकम</th>
+                </tr>
+              </tbody>
+              <tbody id="itemtable">
+                <tr id="itemrow">
+                  <td height="15px" width="15%">{{quntityOfItem}}</td>
+                  <td height="15px" width="30%">{{detailOfItem}}</td>
+                  <td height="15px" width="15%">{{weigth}}</td>
+                  <td height="15px" width="10%">{{rate}}</td>
+                  <td height="15px" width="15%">{{fare}}</td>
+                  <td height="15px" width="15%">{{price}}</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr id="item column">
+                  <th height="459px" width="15%"></th>
+                  <th height="459px" width="30%"></th>
+                  <th height="459px" width="15%"></th>
+                  <th height="459px" width="10%"></th>
+                  <th height="459px" width="15%"></th>
+                  <th height="459px" width="15%"></th>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="service">
+            <div class="service--details">
+              <div class="bank">
+                <div class="bank-item">
+                  <div class="b-name">Bank Details:</div>
+                  <div class="b-name-value">HDFC Bank</div>
+                </div>
+                <div class="bank-item">
+                  <div class="b-name">Name:</div>
+                  <div class="b-name-value">Jai Maa Bhavani Transport</div>
+                </div>
+                <div class="bank-item">
+                  <div class="b-name">Branch:</div>
+                  <div class="b-name-value">Baggad</div>
+                </div>
+                <div class="bank-item">
+                  <div class="b-name">A/C No:</div>
+                  <div class="b-name-value">123565464564</div>
+                </div>
+                <div class="bank-item">
+                  <div class="b-name">IFSC Code</div>
+                  <div class="b-name-value">HDFC00003851</div>
+                </div>
+              </div>
+              <div class="gst">
+                <div class="g-title">GSTIN:</div>
+                <div class="g-title-value"></div>
+              </div>
+            </div>
+            <div class="tax">
+              <div class="tax-title">Service Tax To be Paid by</div>
+              <div class="tax-r">
+                <div class="t-t-t">Consignor</div>
+                <div class="t-t-t-value"></div>
+              </div>
+              <div class="tax-r">
+                <div class="t-t-t">Consignee</div>
+                <div class="t-t-t-value"></div>
+              </div>
+              <div class="tax-r">
+                <div class="t-t-t">Transporter</div>
+                <div class="t-t-t-value"></div>
+              </div>
+              <div class="tax-r">
+                <div class="t-t-t">Driver Copy</div>
+                <div class="t-t-t-value"></div>
+              </div>
+            </div>
+            <div class="remaining">
+              <div class="r-rwo">
+                <div class="r-title">सेवाकर</div>
+                <div class="r-title-value">{{ServiceTax}}</div>
+              </div>
+              <div class="r-rwo">
+                <div class="r-title">बिल्टी चार्ज</div>
+                <div class="r-title-value">{{BuiltyCharge}}</div>
+              </div>
+              <div class="r-rwo">
+                <div class="r-title">कुल भाड़ा</div>
+                <div class="r-title-value">{{TotalFare}}</div>
+              </div>
+              <div class="r-rwo">
+                <div class="r-title">एडवांस</div>
+                <div class="r-title-value">{{Advance}}</div>
+              </div>
+              <div class="r-rwo">
+                <div class="r-title">बाकी किराया</div>
+                <div class="r-title-value">{{remainingFare}}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="b-footer">
+        <div class="f-one">
+          नोट : 1. माल डिलेवरी के बाद 15 दिन में पोच जमा करना अनिवार्य है। 2.
+          माल की जवाबदारी मोटर मालिक, ड्रायवर की रहेगी। 3. माल की गिनती की
+          जवाबदारी ड्रायवर की रहेगी। 4. गाड़ी कंपनी में पहुँचने के बाद 24 घंटे
+          के अंदर खाली नहीं होती है तो 1000 रू. प्रतिदिन के हिसाब से चार्ज देना
+          होगा। 5. गाड़ी माल भरने जाती है तो भी 24 घंटे के अंदर नहीं डिलेवरी
+          स्थान भरे जाने पर 100 रू. प्रतिदिन के हिसाब से चार्ज देना होगा।
+        </div>
+        <div class="f-two">
+          <div>Owner's Risk</div>
+          <div class="d-place">
+            <div class="d-p-t">डिलेवरी स्थान</div>
+            <div class="dpt-value"></div>
+          </div>
+        </div>
+        <div class="f-three"><h3>वास्ते : जय माँ भवानी ट्रांसपोर्ट</h3></div>
+      </div>
     </div>
-
-
-</body></html>
+  </body>
+</html>
