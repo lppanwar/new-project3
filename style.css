@@ -1,0 +1,393 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.titlefirst{
+display: flex;
+justify-content: center;
+flex-basis: 50%;
+flex-direction: row;
+height: 30px;
+color: rgb(7, 7, 61);
+}
+.titleNoA{
+    display: flex;
+    justify-content: right;
+    flex-basis: 50%;
+    flex-direction: row;
+    height: 30px;
+    margin-top: -25px;
+    margin-right: 44px;
+    color: rgb(7, 7, 61);
+
+}
+.titleNoB{ 
+    display: flex;
+    justify-content: right;
+    flex-basis: 50%;
+    flex-direction: row;
+    height: 5px;
+    margin-top: -17px;
+margin-right: 44px;
+padding-top: 2px;
+color: rgb(7, 7, 61);
+}
+.maintitle{
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: row;
+    color: rgb(7, 7, 61);
+    margin-left: 30px;
+    font-weight: bold;
+}
+.titleimage{
+    display: flex;
+    justify-content: right;
+    flex-basis: 35%;
+    height: 170px;   
+}
+.titlesecond{
+   margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-basis: 60%;
+    flex-direction: row;
+    font-size: 35px;
+    margin-right: 392px;
+    margin-top: 10px;
+}
+.titlethird{
+    
+    display: flex;
+    justify-content: center;
+    margin-right: 100px;
+    margin-top: -117px;
+    font-size: 24px;
+    margin-left: 15px;
+    color: rgb(7, 7, 61)
+}
+body{
+      max-width: 100vw;
+    border: 2px solid black;
+    display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        min-height: 900px;
+}
+@page {
+    size: A4;
+    margin: 0;}
+.address{
+    display: flex;
+    justify-content: center;
+    margin-right: 12px;
+    font-size: 18px;
+    color: rgb(7, 7, 61);
+    
+}
+.pinNO{
+    display: flex;
+    justify-content: center;
+    color: rgb(7, 7, 61);
+}
+.no-item{ display: flex;
+    flex-direction: row;
+
+
+}
+.no{
+     margin-left: 10px;
+     color: rgb(7, 7, 61);
+}
+.no-value{
+    font-weight: bold;
+    padding-top: 2px;
+    padding-right: 82px;
+    padding-bottom: 2px;
+    padding-left: 40px;
+    border-bottom-width: 2px;
+    border-bottom: solid;
+    color: rgb(7, 7, 61);
+
+
+}
+.t-no-item{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+}
+.truck-no{
+display: flex;
+flex-basis: 20%;
+flex-direction: row;
+margin-left: 12px;
+}
+.truck-no-value{
+    margin-left: -205px;
+    display: flex;
+    flex-basis: 30%;
+    border-bottom-width: 2px solid ;
+    padding-left: 2px;
+    padding-right: 2px;
+    flex-direction: row;
+    margin-right: 17px;
+    border-bottom: 2px solid ;
+    color: rgb(7, 7, 61);}
+
+.container{
+    flex-direction: column;
+    margin-top: 25px;
+    color: rgb(7, 7, 61);
+}
+.date{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 20%;
+
+}
+.date-value{
+    display: flex;
+    flex-direction: row;
+    flex-basis:30%;
+    border-bottom: 2px solid;
+    margin-left: -200px;
+    color: rgb(7, 7, 61);
+
+}
+.rt-item{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    flex-basis: 100%;
+}
+.rate-rs{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 20%;
+    padding-left: 14px;
+    padding-top: 12px;}
+    .rate-rs-value{
+        display: flex;
+        flex-direction: row;
+        flex-basis: 30%;
+        border-bottom: 2px solid;
+        margin-left: -200px;
+        color: rgb(7, 7, 61);
+    }
+    .weight{
+        display: flex;
+        flex-direction: row;
+        flex-basis: 20%;
+       margin-left: 14px; 
+       margin-top: 12px;
+    }
+    .weight-value{
+        display: flex;
+        flex-direction: row;
+        flex-basis: 30%;
+        border-bottom: 2px solid;
+        margin-left: -200px;
+        color: rgb(7, 7, 61);
+    }
+    .where-item{
+        display: flex;
+        flex-direction: row;
+        flex-basis: 100%; 
+     }
+.where{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 20%;
+    margin-left: 14px;
+    margin-top: 12px;
+}
+.where-value{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 25%;
+    border-bottom: 2px solid;
+    margin-left: -200px;
+    color: rgb(7, 7, 61);
+}
+.to{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 15%;
+    margin-left: 14px;
+    padding-top: 12px;
+}
+.to-value{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 30%;
+    border-bottom: 2px solid;
+    margin-left: -152px;
+    color: rgb(7, 7, 61);
+}
+.til{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 10%;
+    margin-left: 14px;
+    padding-top: 12px;
+}
+.tr-name{   
+display: flex;
+flex-direction: row;
+flex-basis: 100%;
+}
+.trans-name{
+    display: flex;
+    flex-direction: row;
+    height: 95px;
+    margin-left: 14px;
+    padding-top: 25px;
+}
+.material{
+    display: flex;
+    flex-direction: row;
+
+}
+.material-desc{
+ display: flex;
+ flex-direction: row;  
+margin-left: 14px;
+padding-top: 30px;
+}
+.total-payment{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+}
+.total-pay{
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    margin-left: 14px;
+    flex-basis: 30%;
+}
+.total-pay-value{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 70%;
+    border-bottom: 2px solid;
+    margin-left: -290px;
+
+}
+.advance{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+}
+.ad-1{
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    margin-left: 14px;
+    flex-basis: 30%;
+
+}
+.ad-1-value{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 70%;
+    border-bottom: 2px solid;
+    margin-left: -290px;
+
+}
+.refund{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+}
+.refund-1{
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    margin-left: 14px;
+    flex-basis: 30%;
+}
+.refund-1-value{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 70%;
+    border-bottom: 2px solid;
+    margin-left: -290px;
+
+}
+.commision{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+}
+.comm-1{
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    margin-left: 14px;
+    flex-basis: 30%;
+}
+.comm-1-value{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 70%;
+    border-bottom: 2px solid;
+    margin-left: -290px;
+}
+.balance{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+}
+.bal-1{
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    margin-left: 14px;
+    flex-basis: 30%;
+}
+.bal-1-value{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 70%;
+    border-bottom: 2px solid;
+    margin-left: -290px;
+}
+.thanks{
+ display: flex;
+ font-size: 20px;
+  padding: top 25px; 
+margin-left: 14px;
+font-weight: 40px;
+margin-top: 40px;
+font-weight: bold;
+}
+.no-item{
+    margin-top: 80px;
+    margin-left: 5px;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+}
+.signature-driver{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 50%;
+}
+.sign-1{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 25%;
+    margin-top: 32px;
+    margin-left: 50px;
+    }
+.sign-tr{
+    margin-top: 30px;
+    margin-left: 75px;
+}
