@@ -1,0 +1,430 @@
+body {
+    height: 200vh;
+    width: 1300px;
+    border: 2px solid rgb(7, 7, 61) ;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    background-color: azure;
+}
+
+.header {
+    display: flex;
+    flex-basis: 100%;
+    color: rgb(7, 7, 61);
+    padding-top: 10px;
+
+}
+
+.titlefirst {
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: row;
+
+}
+
+.titleA {
+    display: flex;
+    flex-basis: 50%;
+    justify-content: left;
+    justify-content: right;
+}
+
+.mo {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 50%;
+    justify-content: right;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+.mo2 {
+    display: flex;
+    justify-content: right;
+    padding-right: 20px;
+    color: rgb(7, 7, 61);
+    height: 20px;
+    margin-top: -40px;
+}
+
+.maintitle {
+    margin-top: -10px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: row;
+    color: rgb(7, 7, 61);
+}
+
+.img1 {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 25%;
+    height: 120px;
+    justify-content: right;
+}
+
+.main-t {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 50%;
+    justify-content: left;
+    font-size: 30px;
+    margin-left: 120px;
+    margin-top: 0px;
+    padding-top: 0px
+}
+
+.img2 {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 25%;
+    height: 120px;
+    justify-content: left;
+    margin-right: 80px;
+
+}
+
+.titleaddress {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 176px;
+    margin-top: -60px;
+    color: rgb(7, 7, 61);
+    padding-left: 50px;
+
+
+}
+
+.pinaddress {
+    justify-content: center;
+    display: flex;
+    margin-right: 70px;
+    margin-top: -47px;
+    color: rgb(7, 7, 61);
+}
+
+.container {
+    display: flex;
+    margin-left: 20px;
+    flex-basis: 100%;
+    margin-top: 5px;
+    color: rgb(7, 7, 61);
+    font-size: 18px;
+}
+
+.box1 {
+    display: flex;
+    flex-basis: 50%;
+    height: 32vh;
+    padding-right: 5px;
+    border: 1px solid rgb(7, 7, 61) ;
+    flex-direction: column;
+
+}
+
+.partyname {
+    display: flex;
+    flex-direction: row;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-right: 5px;
+    flex-basis: 50%;
+}
+
+.party-name {
+    display: flex;
+    flex-basis: 25%;
+    flex-direction: row;
+
+}
+
+.party-name-value {
+    display: flex;
+    flex-basis: 25%;
+
+}
+
+.gs-no {
+    display: flex;
+    padding-top: 40px;
+    padding-left: 5px;
+}
+
+.gs-no-value {
+    display: flex;
+    flex-basis: 25%
+}
+
+.box2 {
+    display: flex;
+    flex-basis: 50%;
+    height: 32vh;
+    padding-right: 5px;
+    border: 1px solid rgb(7, 7, 61);
+    flex-direction: column;
+    margin-right: 20px;
+
+}
+
+.bill-no {
+    display: flex;
+    flex-direction: row;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 5px;
+}
+
+.bill-no-1 {
+    display: flex;
+    flex-basis: 10%;
+}
+
+.bill-no-value {
+    display: flex;
+    flex-basis: 10%;
+}
+
+.date {
+    display: flex;
+    flex-basis: 15%;
+    justify-content: right;
+    padding-left: 50px;
+
+}
+
+.date-value {
+    display: flex;
+    flex-basis: 15%;
+    margin-left: 120px;
+}
+
+.lr-no {
+    display: flex;
+    flex-direction: row;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 5px;
+}
+
+.lr-no-1 {
+    display: flex;
+    flex-basis: 25%;
+}
+
+.lr-no-1-value {
+    display: flex;
+    flex-basis: 25%;
+}
+
+.from {
+    display: flex;
+    flex-direction: row;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 5px;
+}
+
+.from-1 {
+    display: flex;
+    flex-basis: 25%;
+}
+
+.from-1-value {
+    display: flex;
+    flex-basis: 25%;
+}
+
+.to {
+    display: flex;
+    flex-direction: row;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 5px;
+}
+
+.to-1 {
+    display: flex;
+    flex-basis: 25%;
+}
+
+.to-1-value {
+    display: flex;
+    flex-basis: 25%;
+}
+
+.weight {
+    display: flex;
+    flex-direction: row;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 5px;
+}
+
+.weight-1 {
+    display: flex;
+    flex-basis: 25%;
+}
+
+.weight-1-value {
+    display: flex;
+    flex-basis: 25%;
+}
+
+.vehicle {
+    display: flex;
+    flex-direction: row;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 5px;
+}
+
+.vehicle-1 {
+    display: flex;
+    flex-basis: 25%;
+}
+
+.vehicle-1-value {
+    display: flex;
+    flex-basis: 25%;
+}
+
+.material {
+    flex-basis: 100%;
+
+}
+
+tbody tr {
+    display: flex;
+    flex-direction: row;
+    color: rgb(7, 7, 61);
+    margin-right: 20px;
+    margin-left: 20px;
+    border-right: rgb(7, 7, 61);
+    border-left-color: rgb(7, 7, 61);
+    ;
+}
+
+.item th {
+    border-top-color: rgb(7, 7, 61);
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-right-color: rgb(7, 7, 61);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-bottom-color: rgb(7, 7, 61);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: rgb(7, 7, 61);
+    border-left-style: solid;
+    border-left-width: 1px;
+    color: rgb(7, 7, 61);
+
+}
+
+.item table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.b-detail {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.bank-item {
+    display: flex;
+    flex-direction: row;
+}
+
+.bank {
+    display: flex;
+    flex-direction: column;
+    border: 1 px solid;
+    width: 544px;
+    border: 1px solid rgb(7, 7, 61);
+    margin-top: -60px;
+    height: 150px;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-left: 20px;
+    color:rgb(7, 7, 61) ;
+}
+
+.total-amount {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    border: 1px solid rgb(7, 7, 61);
+    height: 100px;
+    margin-right: 20px;
+color:rgb(7, 7, 61) ;
+}
+
+.net-amount {
+    display: flex;
+    flex-direction: row;
+    width: 446Px;
+    justify-content: center;
+    padding-top: 20px;
+    border-right: 1px solid rgb(7, 7, 61);
+    margin-left: 10px;
+    color:rgb(7, 7, 61) ;
+
+}
+
+.net-amount-value {
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    justify-content: center;
+
+}
+
+.footer {
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-right: 20px;
+    color:rgb(7, 7, 61) ;
+}
+
+.sub-address {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 60%;
+    height: 100px;
+    padding-top: 10px;
+
+}
+
+.service {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.s-tax-no {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 30%;
+}
+
+.s-tax-no-value {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 30%;
+}
+
+.sign {
+    display: flex;
+    flex-basis: 40%;
+    justify-content: center;
+    align-items: center;
+    color:rgb(7, 7, 61) ;
+}
